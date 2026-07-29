@@ -8,12 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=8">
+<link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
 <nav class="topnav">
-  <a href="index.html" class="topnav-logo">赤峰街 CHIFENG</a>
+  <a href="index.html" class="topnav-logo"><img src="images/logo.png?v=3" alt="臺北中山古著穿搭一條街"></a>
   <button class="topnav-toggle" aria-label="開啟選單" aria-expanded="false">☰ 選單</button>
   <ul class="topnav-menu">
     <li class="has-sub active">
@@ -45,28 +46,11 @@
   </ul>
 </nav>
 
-<header class="hero">
-  <div class="deco deco-star1">✦</div>
-  <div class="deco deco-star2">✧</div>
-  <div class="deco deco-star3">✦</div>
-  <div class="deco deco-heart1">♥</div>
-  <div class="deco deco-heart2">♥</div>
-  <div class="deco deco-glasses">👓</div>
-  <div class="deco deco-camera">📷</div>
+<header class="hero"></header>
 
-  <div class="hero-content">
-    <p class="hero-eyebrow">TAIPEI ZHONGSHAN VINTAGE STREET</p>
-    <h1 class="hero-title">
-      <span class="badge badge-pink">臺北中山</span>
-      <span class="badge badge-mint">古著穿搭一條街</span>
-    </h1>
-    <div class="hero-tags">
-      <span class="tag">2026.08.20 — 11.10</span>
-      <span class="tag tag-alt">台北市中山區・赤峰街</span>
-    </div>
-    <a href="#video" class="hero-cta">認識這條街 ↓</a>
-  </div>
-</header>
+<div class="hero-cta-strip">
+  <a href="#video" class="hero-cta">認識這條街 ↓</a>
+</div>
 
 <main>
 
@@ -76,11 +60,8 @@
       <h2>宣傳影片</h2>
       <p class="lead">一支影片，帶你快速認識這場橫跨三個月的古著穿搭盛會。</p>
       <div class="video-frame">
-        <div class="video-placeholder">
-          <span class="icon">🎬</span>
-          <span>宣傳影片製作中，敬請期待（範例區塊）</span>
-        </div>
-        <!-- 影片就緒後，將上方 .video-placeholder 換成：
+        <img src="images/video-cover.jpg" alt="宣傳影片封面，影片製作中">
+        <!-- 影片就緒後，移除上方 <img>，改用：
         <iframe src="https://www.youtube.com/embed/替換成影片ID" title="宣傳影片" allowfullscreen></iframe>
         -->
       </div>
@@ -102,6 +83,7 @@
         規劃橫跨 2026 年 8 月至 11 月的系列活動，
         期盼讓赤峰街成為北部古著愛好者心中的年度盛事。
       </p>
+      <img src="images/origin-photo.jpg" alt="活動籌備花絮" class="content-photo">
     </div>
   </section>
 
@@ -114,24 +96,25 @@
         悄悄長出一間間風格獨具的古著選物店與工作室。
         走進這條巷弄，用一件古著、一次搭配，重新詮釋屬於自己的復古美學。
       </p>
+      <img src="images/district-street.jpg" alt="赤峰街街景" class="content-photo">
       <div class="highlight-grid">
         <div class="highlight-card card-pink">
-          <span class="highlight-icon">👜</span>
+          <img class="highlight-icon-img" src="images/icon-shopping.png" alt="">
           <h3>古著選物巡禮</h3>
           <p>走訪赤峰街上獨立古著店，發掘各具風格的二手服飾與單品。</p>
         </div>
         <div class="highlight-card card-mint">
-          <span class="highlight-icon">📷</span>
+          <img class="highlight-icon-img" src="images/icon-camera.png" alt="">
           <h3>街頭穿搭打卡</h3>
           <p>老屋鐵件、復古招牌交織的巷弄場景，是最自然的穿搭背景。</p>
         </div>
         <div class="highlight-card card-lavender">
-          <span class="highlight-icon">🕶️</span>
+          <img class="highlight-icon-img" src="images/icon-sunglasses.png" alt="">
           <h3>跨時代風格市集</h3>
           <p>從老式軍裝到千禧年風潮，一次收藏橫跨數十年的時尚語彙。</p>
         </div>
         <div class="highlight-card card-pink">
-          <span class="highlight-icon">✨</span>
+          <img class="highlight-icon-img" src="images/icon-sparkle.png" alt="">
           <h3>巷弄限定活動</h3>
           <p>活動期間陸續推出限定主題與街區活動，敬請持續關注赤峰街。</p>
         </div>
