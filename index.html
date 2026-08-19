@@ -3,34 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>活動首頁｜臺北中山古著穿搭一條街</title>
-<meta name="description" content="臺北中山古著穿搭一條街，2026/8/20 – 11/10，於台北市中山區赤峰街登場。走進老屋巷弄，感受古著選物與街頭穿搭的魅力。">
+<title>活動首頁｜臺北中山古着穿搭一條街</title>
+<meta name="description" content="臺北中山古着穿搭一條街，2026/8/20 – 11/10，於台北市中山區赤峰街登場。走進老屋巷弄，感受古着選物與街頭穿搭的魅力。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=8">
+<link rel="stylesheet" href="style.css?v=23">
 <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
 <nav class="topnav">
-  <a href="index.html" class="topnav-logo"><img src="images/logo.png?v=3" alt="臺北中山古著穿搭一條街"></a>
+  <a href="index.html" class="topnav-logo"><img src="images/logo.png?v=3" alt="臺北中山古着穿搭一條街"></a>
   <button class="topnav-toggle" aria-label="開啟選單" aria-expanded="false">☰ 選單</button>
   <ul class="topnav-menu">
     <li class="has-sub active">
       <a href="index.html">活動首頁</a>
       <ul class="submenu">
         <li><a href="index.html#video">宣傳影片</a></li>
-        <li><a href="index.html#origin">活動起源</a></li>
+        <li><a href="index.html#coupon">古着券介紹</a></li>
         <li><a href="index.html#district">街區介紹</a></li>
       </ul>
     </li>
     <li class="has-sub">
-      <a href="activity.html">活動說明</a>
+      <a href="activity.html">古着派對</a>
       <ul class="submenu">
-        <li><a href="activity.html#party">古著派對</a></li>
-        <li><a href="activity.html#coupon">古著券介紹</a></li>
-        <li><a href="activity.html#draw">月月抽活動</a></li>
+        <li><a href="activity.html#silent">靜音派對</a></li>
+        <li><a href="activity.html#competition">穿搭競賽</a></li>
       </ul>
     </li>
     <li class="has-sub">
@@ -40,8 +39,12 @@
         <li><a href="shops.html#list">店家名單</a></li>
       </ul>
     </li>
-    <li>
-      <a href="winners.html">中獎名單</a>
+    <li class="has-sub">
+      <a href="winners.html">月月抽活動</a>
+      <ul class="submenu">
+        <li><a href="winners.html#task">當月任務</a></li>
+        <li><a href="winners.html#list">中獎名單</a></li>
+      </ul>
     </li>
   </ul>
 </nav>
@@ -56,9 +59,8 @@
 
   <section id="video" class="section bg-paper">
     <div class="section-inner">
-      <span class="pill-label pill-pink">VIDEO</span>
       <h2>宣傳影片</h2>
-      <p class="lead">一支影片，帶你快速認識這場橫跨三個月的古著穿搭盛會。</p>
+      <p class="lead">一支影片，帶你快速認識這場橫跨三個月的古着穿搭盛會。</p>
       <div class="video-frame">
         <img src="images/video-cover.jpg" alt="宣傳影片封面，影片製作中">
         <!-- 影片就緒後，移除上方 <img>，改用：
@@ -68,64 +70,128 @@
     </div>
   </section>
 
-  <section id="origin" class="section bg-pale">
+  <section id="coupon" class="section bg-pale">
     <div class="section-inner">
-      <span class="pill-label pill-mint">ORIGIN</span>
-      <h2>活動起源</h2>
+      <h2>古着券介紹</h2>
       <p class="lead">
-        （以下為範例文字，請替換為正式活動起源內容）
-        為推動地方商圈轉型與循環時尚理念，本活動由主辦單位攜手赤峰街周邊店家共同發起，
-        期望透過古著穿搭的形式，重新賦予老屋巷弄新的生命力，
-        也讓民眾在消費之餘，認識永續時尚與街區文化保存的價值。
+        配合臺北中山古着穿搭一條街活動，只要參加指定活動或完成任務，
+        就有機會抽中古着券，可於本次活動特約店家消費使用。
       </p>
-      <p class="lead">
-        自籌備以來，已邀集多間在地選物店、工作室共同參與，
-        規劃橫跨 2026 年 8 月至 11 月的系列活動，
-        期盼讓赤峰街成為北部古著愛好者心中的年度盛事。
-      </p>
-      <img src="images/origin-photo.jpg" alt="活動籌備花絮" class="content-photo">
+      <h3 class="coupon-subheading">取得方式</h3>
+      <div class="link-card-grid">
+        <a href="winners.html#task" class="link-card">
+          <span class="link-card-icon">🎁</span>
+          <span class="link-card-title">月月抽活動</span>
+          <span class="link-card-cta">點我了解 →</span>
+        </a>
+        <a href="activity.html#competition" class="link-card">
+          <span class="link-card-icon">👗</span>
+          <span class="link-card-title">穿搭競賽</span>
+          <span class="link-card-cta">點我了解 →</span>
+        </a>
+      </div>
+      <img src="images/coupon.jpg" alt="古着券示意圖" class="content-photo">
+
+      <h3 class="coupon-subheading">可使用店家名單</h3>
+      <div class="store-list-box">
+        <ul class="store-list">
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%84%9B%E6%89%8B%E5%89%B5%E8%81%B7%E6%84%9F%E9%81%B8%E7%89%A9%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%9749%E5%B7%B715%E8%99%9F1%E6%A8%93" target="_blank" rel="noopener">愛手創職感選物</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%B2%E5%9C%A8%E4%B8%80%E8%B5%B7%20%E4%B8%AD%E5%B1%B1%E5%BA%97%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E6%B0%91%E7%94%9F%E8%A5%BF%E8%B7%AF132%E8%99%9F1%E6%A8%93" target="_blank" rel="noopener">串在一起（中山店）</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=EWF%20Vintage%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%973%E5%B7%B749%E8%99%9F" target="_blank" rel="noopener">EWF Vintage 古着店</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B5%A4%E4%B8%B8%E7%B3%B0%E5%AD%90%E8%8C%B6%E5%B1%8B%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%9749%E5%B7%B72%E8%99%9F" target="_blank" rel="noopener">赤丸</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E9%9B%85%E3%81%BE%E3%81%95%E3%81%93Masako%20Vintage%20%26%20Boutique%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">小雅まさこMasako Vintage &amp; Boutique</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%8B%BE%E8%A1%A3%E9%A3%BE%E7%B4%80%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">拾衣飾紀</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=SUZU_HOUSE%20Vintage%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">SUZU_HOUSE Vintage</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Travis%20Vintage%20%26%20Used%20Clothing%20%E5%8F%B0%E5%8C%97%E5%B8%82%E8%B5%A4%E5%B3%B0%E8%A1%9741%E5%B7%B74%E8%99%9F1%E6%A8%93" target="_blank" rel="noopener">Travis Vintage &amp; Used Clothing</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A8%81%E5%9F%BA%E5%9F%BA%E5%B0%8F%E5%B3%B6%EF%BC%88%E5%8D%97%E8%A5%BF%EF%BC%89%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">威基基小島（南西）</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%98%BF%E8%A5%BF%E5%8F%A4%E7%9D%80%EF%BC%88%E5%A8%81%E5%9F%BA%E5%9F%BA%E8%B5%A4%E5%B3%B0%EF%BC%89%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">蘿西古着（威基基赤峰）</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Mitty%E5%8F%A4%E7%9D%80%E5%BA%97%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%9743%E8%99%9F2%E6%A8%93" target="_blank" rel="noopener">mitty_goods</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B2%A8%E5%AE%A4%E7%94%9C%E5%93%81%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%9771%E5%B7%B734%E8%99%9F" target="_blank" rel="noopener">貨室甜品</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8F%B0%E5%8C%97%E6%82%A8%E5%A5%BD%E7%99%BE%E8%B2%A8%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%9749%E5%B7%B75%E8%99%9F" target="_blank" rel="noopener">台北您好百貨</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A6%AC%E5%BB%84%E8%A1%A3%E6%AB%83%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">馬廄衣櫃</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=SALA%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">SALA</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Mess-age%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">Mess-age</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%80%9D%E6%85%95%E9%9B%AA%E6%89%8B%E5%B7%A5%E5%84%AA%E6%A0%BC%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E6%89%BF%E5%BE%B7%E8%B7%AF%E4%BA%8C%E6%AE%B537%E5%B7%B77%E8%99%9F" target="_blank" rel="noopener">思慕雪手工優格</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Same.Same%20Jewelry%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">Same.Same Jewelry</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=JOJA%20%E7%B3%BE%E7%B5%90%E5%89%B5%E4%BD%9C%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%9749%E5%B7%B72-2%E8%99%9F" target="_blank" rel="noopener">JOJA 糾結創作</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%B4%85%E7%8E%A5%E7%B7%AC%E5%9B%A0%E8%B2%93%E8%97%9D%E5%BB%8A%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%9771%E5%B7%B74%E8%99%9F" target="_blank" rel="noopener">紅玥緬因貓藝廊 Red Moon</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=BASE%201%20%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E4%B8%AD%E5%B1%B1%E5%8C%97%E8%B7%AF%E4%BA%8C%E6%AE%B516%E5%B7%B74%E8%99%9F1%E6%A8%93" target="_blank" rel="noopener">BASE 1</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A6%BE%E5%B1%B1%E9%83%A8%E9%95%B7%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E6%89%BF%E5%BE%B7%E8%B7%AF%E4%BA%8C%E6%AE%B591%E5%B7%B748%E8%99%9F" target="_blank" rel="noopener">禾山部長</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=LazyDer%E6%87%B6%E5%BE%97%E9%81%B8%E7%89%A9%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E6%89%BF%E5%BE%B7%E8%B7%AF%E4%BA%8C%E6%AE%B553%E5%B7%B717%E8%99%9F" target="_blank" rel="noopener">LazyDer懶得選物</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Mindful%20Market%20%E8%B5%A4%E5%B3%B0%E8%A1%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener">Mindful Market</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E8%89%AF%E7%B5%86%E6%B6%BC%E9%BA%B5%20%E5%8F%B0%E5%8C%97%E5%B8%82%E5%A4%A7%E5%90%8C%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%9781%E8%99%9F" target="_blank" rel="noopener">小良絆涼麵</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section id="district" class="section bg-paper dotted">
     <div class="section-inner">
-      <span class="pill-label pill-lavender">DISTRICT</span>
       <h2>街區介紹</h2>
+
       <p class="lead">
-        赤峰街曾是台北的打鐵街與五金重鎮，如今在老屋與鐵皮招牌之間，
-        悄悄長出一間間風格獨具的古著選物店與工作室。
-        走進這條巷弄，用一件古著、一次搭配，重新詮釋屬於自己的復古美學。
+        走進台北捷運中山站與雙連站之間的巷弄，你會感受到一種截然不同的時間流速。
+        城市的喧囂漸漸遠去，空氣中偶爾飄來機油的氣味，卻又夾雜著手沖咖啡的香氣；
+        耳邊聽見的，是老舊修理廠的金屬敲擊聲，以及隔壁文青小店流瀉出的音樂。
       </p>
-      <img src="images/district-street.jpg" alt="赤峰街街景" class="content-photo">
-      <div class="highlight-grid">
-        <div class="highlight-card card-pink">
-          <img class="highlight-icon-img" src="images/icon-shopping.png" alt="">
-          <h3>古著選物巡禮</h3>
-          <p>走訪赤峰街上獨立古著店，發掘各具風格的二手服飾與單品。</p>
-        </div>
-        <div class="highlight-card card-mint">
-          <img class="highlight-icon-img" src="images/icon-camera.png" alt="">
-          <h3>街頭穿搭打卡</h3>
-          <p>老屋鐵件、復古招牌交織的巷弄場景，是最自然的穿搭背景。</p>
-        </div>
-        <div class="highlight-card card-lavender">
-          <img class="highlight-icon-img" src="images/icon-sunglasses.png" alt="">
-          <h3>跨時代風格市集</h3>
-          <p>從老式軍裝到千禧年風潮，一次收藏橫跨數十年的時尚語彙。</p>
-        </div>
-        <div class="highlight-card card-pink">
-          <img class="highlight-icon-img" src="images/icon-sparkle.png" alt="">
-          <h3>巷弄限定活動</h3>
-          <p>活動期間陸續推出限定主題與街區活動，敬請持續關注赤峰街。</p>
-        </div>
-      </div>
+      <p class="district-quote">
+        「這裡，是赤峰街。一條將『老台北的硬派』與『新世代的復古』完美揉合的傳奇街區。」
+      </p>
+
+      <img src="images/district-sign.jpg" alt="赤峰街舊名打鐵仔街的街區標誌" class="content-photo">
+      <p class="photo-caption">赤峰街舊名「打鐵仔街」</p>
+
+      <p class="lead">
+        時光倒轉回半個世紀前，赤峰街的名字在老台北人的記憶裡，總是與「金屬」和「黑油」掛鉤——
+        早年被稱為「打鐵街」或「汽車零件街」。台灣經濟起飛的年代，這裡聚集了無數五金行、
+        汽車零件行與廢五金回收廠，狹窄巷弄裡總停滿等待修理的車輛，
+        老師傅們用沾滿油污的雙手，支撐起一個個家庭，也推動了這座城市的齒輪。
+      </p>
+
+      <img src="images/district-ironworks.jpg" alt="巷弄裡仍在營業的老五金行" class="content-photo">
+      <p class="photo-caption">巷弄裡仍在營業的老五金行</p>
+
+      <p class="lead">
+        隨著產業結構轉型，重工業與修車廠逐漸外移，赤峰街的敲擊聲變少了，
+        留下一棟棟斑駁的老屋與空蕩的店面。大約十多年前，一群嚮往獨立、尋找創作空間的
+        年輕創業者走進這裡，看中的正是相對低廉的租金，以及台北市中心罕見的
+        「未經粉飾的真實感」。他們沒有把老屋拆除重建，而是保留了殘破的紅磚、
+        斑駁的招牌與生鏽的鐵門，小心翼翼地在「舊」的畫布上，點綴出「新」的色彩。
+      </p>
+      <p class="district-quote">
+        「赤峰街的魅力，在於它從不掩飾自己的老態，反而將歲月的痕跡當作最美的裝潢。」
+      </p>
+
+      <img src="images/district-cafe.jpg" alt="老屋立面保留下來的花磚與洗石子牆" class="content-photo">
+      <p class="photo-caption">老屋立面保留下來的花磚與洗石子牆</p>
+
+      <p class="lead">
+        如果說咖啡廳為赤峰街帶來了人潮，那麼「古着店」的大量進駐，
+        則是為這條街注入了最契合的靈魂。從美式工裝、日系復古、歐洲軍品
+        到年代感十足的碎花洋裝，無數風格迥異的古着店在巷弄裡百花齊放。
+        古着的核心價值在於賦予舊衣物新的生命，而赤峰街的本質，正是老屋新生——
+        當一件古着掛在保留著復古花磚的老屋裡，兩者之間產生了無可取代的化學反應。
+      </p>
+
+      <img src="images/district-vintage-shop.jpg" alt="巷弄裡的古着選物店" class="content-photo">
+      <p class="photo-caption">巷弄裡的古着選物店</p>
+
+      <p class="lead">
+        如今的赤峰街，是一座活生生的街區博物館。它沒有被徹底士紳化而失去原有的靈魂，
+        那些屹立不搖的老五金行，依然以長者的姿態，包容著穿梭其中的時髦男女。
+        當你穿上一件剛從赤峰街古着店尋到的衣服走出店門，
+        迎面而來的，是打鐵街傳承至今的微風。
+      </p>
+
+      <img src="images/district-taipei-niihao.jpg" alt="赤峰街上的特約店家台北您好百貨" class="content-photo">
+      <p class="photo-caption">赤峰街上的特約店家之一「台北您好百貨」</p>
     </div>
   </section>
 
 </main>
 
 <footer class="footer">
-  <span class="footer-badge">臺北中山古著穿搭一條街</span>
+  <span class="footer-badge">臺北中山古着穿搭一條街</span>
   <p class="footer-dates">2026.08.20 – 11.10 ・ 台北市中山區赤峰街</p>
 </footer>
 
