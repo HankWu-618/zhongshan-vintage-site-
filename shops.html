@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=23">
+<link rel="stylesheet" href="style.css?v=40">
 <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
@@ -42,7 +42,7 @@
     <li class="has-sub">
       <a href="winners.html">月月抽活動</a>
       <ul class="submenu">
-        <li><a href="winners.html#task">當月任務</a></li>
+        <li><a href="winners.html#task">活動說明</a></li>
         <li><a href="winners.html#list">中獎名單</a></li>
       </ul>
     </li>
@@ -60,65 +60,242 @@
 
 <main>
 
-  <section id="map" class="section bg-paper">
+  <section class="section bg-paper">
+    <div class="section-deco section-deco-tr"><img src="images/deco-star.png" alt=""></div>
+    <div class="section-deco section-deco-bl"><img src="images/deco-heart.png" alt=""></div>
     <div class="section-inner">
-      <h2>店家地圖</h2>
-      <p class="lead">特約店家皆位於赤峰街周邊巷弄，實際店家標示製作中，目前先顯示街區位置。</p>
-      <div class="map-wrap">
-        <iframe
-          title="赤峰街地圖"
-          src="https://www.google.com/maps?q=%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E8%B5%A4%E5%B3%B0%E8%A1%97&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-      <p class="note-box">📌 正式店家座標地圖製作完成後，將於此區塊替換為標示各店家位置的地圖。</p>
-    </div>
-  </section>
 
-  <section id="list" class="section bg-pale dotted">
-    <div class="section-inner">
-      <h2>店家名單</h2>
-      <p class="lead">以下為範例店家資料，正式店家名單確認後請替換。</p>
-      <div class="shop-grid">
-        <div class="shop-card">
-          <img src="images/shop-01.jpg" alt="店家名稱示例 A 外觀">
-          <span class="shop-tag">古着服飾</span>
-          <h3>店家名稱示例 A</h3>
-          <p class="shop-addr">台北市中山區赤峰街 XX 號</p>
+      <div id="map" class="shop-map-block">
+        <div class="map-wrap map-wrap-crop">
+          <iframe
+            title="赤峰街特約店家地圖"
+            src="https://www.google.com/maps/d/embed?mid=1gKhH9pJjJDgi3pU8AddjH92y9ADz25Q&ehbc=2E312F"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
-        <div class="shop-card">
-          <img src="images/shop-02.jpg" alt="店家名稱示例 B 外觀">
-          <span class="shop-tag">古着配件</span>
-          <h3>店家名稱示例 B</h3>
-          <p class="shop-addr">台北市中山區赤峰街 XX 巷 XX 號</p>
-        </div>
-        <div class="shop-card">
-          <img src="images/shop-03.jpg" alt="店家名稱示例 C 外觀">
-          <span class="shop-tag">選物工作室</span>
-          <h3>店家名稱示例 C</h3>
-          <p class="shop-addr">台北市中山區赤峰街 XX 號 2 樓</p>
-        </div>
-        <div class="shop-card">
-          <img src="images/shop-04.jpg" alt="店家名稱示例 D 外觀">
-          <span class="shop-tag">古着服飾</span>
-          <h3>店家名稱示例 D</h3>
-          <p class="shop-addr">台北市中山區赤峰街 XX 號</p>
-        </div>
-        <div class="shop-card">
-          <img src="images/shop-05.jpg" alt="店家名稱示例 E 外觀">
-          <span class="shop-tag">咖啡・選物</span>
-          <h3>店家名稱示例 E</h3>
-          <p class="shop-addr">台北市中山區赤峰街 XX 巷 XX 號</p>
-        </div>
-        <div class="shop-card">
-          <img src="images/shop-06.jpg" alt="店家名稱示例 F 外觀">
-          <span class="shop-tag">古着配件</span>
-          <h3>店家名稱示例 F</h3>
-          <p class="shop-addr">台北市中山區赤峰街 XX 號</p>
+        <p class="map-hint">👈🏻 滑動檢視　🤏🏻 雙指縮放</p>
+      </div>
+
+      <div id="list" class="shop-list-block">
+        <span class="section-kicker kicker-center">SHOP LIST</span>
+        <h2 class="center-title heading-icon" style="justify-content:center;"><img src="images/icon-shopping.png" alt="">店家名單</h2>
+        <p class="lead center-lead">以下為 30 間活動特約店家，點擊店名可開啟 Google 地圖導航。</p>
+        <div class="shop-row-list">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%84%9B%E6%89%8B%E5%89%B5ISLIFE%2B%E8%81%B7%E6%84%9F%E9%81%B8%E7%89%A9%20%E4%B8%AD%E5%B1%B1%E5%BA%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">01</span>愛手創ISLIFE+職感選物 中山店</p>
+              <p class="shop-row-tagline">#手作職人選物基地</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%B2%E5%9C%A8%E4%B8%80%E8%B5%B7%E5%B9%B3%E5%83%B9%E4%B8%B2%E7%87%92-%E4%B8%AD%E5%B1%B1%E5%BA%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">02</span>串在一起平價串燒-中山店</p>
+              <p class="shop-row-tagline">#手掌生蠔必點串燒</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A6%99%E8%95%89%E8%B2%93%E3%80%82Banana%20Cats%20%7C%20%E5%8F%B0%E5%8C%97%E5%8F%A4%E8%91%97%E5%BA%97%E3%80%81%E4%BA%8C%E6%89%8B%E5%8F%A4%E8%91%A3%E5%8C%85%E3%80%81%E5%8F%A4%E8%91%97%E6%B4%8B%E8%A3%9D%E3%80%81%E4%BA%8C%E6%89%8B%E8%A1%A3%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">03</span>香蕉貓。Banana Cats | 台北古著店、二手古董包、古著洋裝、二手衣</p>
+              <p class="shop-row-tagline">#精修古董包控愛店</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=EWF%20Vintage%20%E5%8F%A4%E8%91%97%E5%BA%97%EF%BD%9C%E9%AB%98%E8%B3%AA%E6%84%9F%E5%8F%A4%E8%91%97%E6%9C%8D%E9%A3%BE%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">04</span>EWF Vintage 古着店｜高質感古着服飾</p>
+              <p class="shop-row-tagline">#五星好評老牌古著</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B5%A4%E4%B8%B8%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">05</span>赤丸</p>
+              <p class="shop-row-tagline">#排隊人氣日式糰子</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E9%9B%85%E3%81%BE%E3%81%95%E3%81%93Masako%20Vintage%20%26%20Boutique%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">06</span>小雅まさこMasako Vintage &amp; Boutique</p>
+              <p class="shop-row-tagline">#日雜氣質古著選物</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%8B%BE%E8%A1%A3%E9%A3%BE%E7%B4%80%20%E9%8A%80%E5%B8%9D%E9%A3%BE%E5%93%81x%E7%B6%AD%E5%A4%9A%E5%8F%A4%E8%91%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">07</span>拾衣飾紀 銀帝飾品x維多古着</p>
+              <p class="shop-row-tagline">#古著配飾雙享選物</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A1%9B%E5%BE%A9%E5%8F%A4%E5%8F%A4%E8%91%97%E7%99%BE%E8%B2%A8%E8%A1%8C%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">08</span>顛復古古着百貨行</p>
+              <p class="shop-row-tagline">#廟宇古著大膽尋寶</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=SUZU_HOUSE%20Vintage%20%E5%8F%A4%E8%91%97%E3%80%81%E4%BA%8C%E6%89%8B%E3%80%81%E9%81%B8%E7%89%A9%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">09</span>SUZU_HOUSE Vintage 古着、二手、選物</p>
+              <p class="shop-row-tagline">#巷弄日系古著選物</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Travis%20Vintage%20%26%20Used%20Clothing%20%28Gone%20surfing%2C%20be%20back%20at%20sunset%29%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">10</span>Travis Vintage &amp; Used Clothing (Gone surfing, be back at sunset)</p>
+              <p class="shop-row-tagline">#木村拓哉朝聖古著</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A8%81%E5%9F%BA%E5%9F%BA%E5%B0%8F%E5%B3%B6%20Waikiki%20Island%20%E5%8D%97%E8%A5%BF%E5%BA%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">11</span>威基基小島 Waikiki Island 南西店</p>
+              <p class="shop-row-tagline">#夏威夷風穿搭選物</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%A8%81%E5%9F%BA%E5%9F%BA%E5%B0%8F%E5%B3%B6%20Waikiki%20Island%20%E8%B5%A4%E5%B3%B0%E5%BA%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">12</span>威基基小島 Waikiki Island 赤峰店</p>
+              <p class="shop-row-tagline">#南國度假感選物店</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=MITTY%20-%20%E4%BA%8C%E6%89%8B%20%E5%8F%A4%E8%91%97%20%E9%81%B8%E7%89%A9%20-%20used%20vintage%20select%20shop%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">13</span>MITTY - 二手 古着 選物 - used vintage select shop</p>
+              <p class="shop-row-tagline">#美式日系混搭古著</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E8%B2%A8%E5%AE%A4%E7%94%9C%E5%93%81%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">14</span>貨室甜品</p>
+              <p class="shop-row-tagline">#古早味刨冰控必吃</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8F%B0%E5%8C%97%E6%82%A8%E5%A5%BD%E7%99%BE%E8%B2%A8%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">15</span>台北您好百貨</p>
+              <p class="shop-row-tagline">#在地選物百貨行</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A6%AC%E5%BB%84%E8%A1%A3%E6%AB%83%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">16</span>馬廄衣櫃</p>
+              <p class="shop-row-tagline">#個性穿搭衣櫃基地</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Thirdfloor%20%E5%8F%83%E6%A8%93%E7%A0%94%E8%A3%BD%E6%89%80%20%E4%B8%AD%E5%B1%B1%E9%96%80%E5%B8%82%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">17</span>Thirdfloor 參樓研製所 中山門市</p>
+              <p class="shop-row-tagline">#植物系飾品好評店</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8F%83%E6%A8%93%E7%A0%94%E8%A3%BD%E6%89%80%20%E5%91%B7%E8%8C%B6%E9%A3%BE%EF%BC%88%E9%A0%90%E7%B4%84%E5%88%B6%EF%BC%89%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">18</span>參樓研製所 呷茶飾（預約制）</p>
+              <p class="shop-row-tagline">#巷弄手作花藝喫茶</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%88%B8%E5%AA%BD%E7%9D%A1%E4%BA%86PamaSleepLa%20-%20RetroGame%20Cafe%20%E5%BE%A9%E5%8F%A4%E9%9B%BB%E7%8E%A9%E5%96%AB%E8%8C%B6%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">19</span>爸媽睡了PamaSleepLa - RetroGame Cafe 復古電玩喫茶</p>
+              <p class="shop-row-tagline">#童年電玩回憶基地</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=SALA%20%E6%92%92%E6%8B%89%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">20</span>SALA 撒拉</p>
+              <p class="shop-row-tagline">#老闆娘的穿搭美學</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Mess-age%20studio%20%26%20graffiti%20supplies%20Taipei%20%E5%AF%AB%E6%89%8B%E5%9F%8E%E5%B8%82%E5%B7%A5%E4%BD%9C%E5%AE%A4%28%E5%8F%B0%E5%8C%97%E5%BA%97%29%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">21</span>Mess-age studio &amp; graffiti supplies Taipei 寫手城市工作室(台北店)</p>
+              <p class="shop-row-tagline">#塗鴉潮流用品基地</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E6%80%9D%E6%85%95%E9%9B%AA%E6%89%8B%E5%B7%A5%E5%84%AA%E6%A0%BC/%E7%84%A6%E7%B3%96%E5%B8%83%E4%B8%81/%E5%84%AA%E6%A0%BC%E5%86%B0%E6%B7%87%E6%B7%8B/%E6%89%8B%E5%B7%A5%E6%9E%9C%E9%86%AC%E5%B0%88%E8%B3%A3%E5%BA%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">22</span>思慕雪手工優格/焦糖布丁/優格冰淇淋/手工果醬專賣店</p>
+              <p class="shop-row-tagline">#純手工優格控愛店</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Same.Same%20Jewelry%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">23</span>Same.Same Jewelry</p>
+              <p class="shop-row-tagline">#手作銀飾質感選物</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=JOJA%20DESIGN%20%E2%80%A2%20%E7%B3%BE%E7%B5%90%E6%89%8B%E4%BD%9C%E5%B8%BD%EF%BD%9C%E5%8F%B0%E5%8C%97%E8%B5%A4%E5%B3%B0%E5%BA%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">24</span>JOJA DESIGN • 糾結手作帽｜台北赤峰店</p>
+              <p class="shop-row-tagline">#日本老花布手作帽</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%B4%85%E7%8E%A5%E7%B7%AC%E5%9B%A0%E8%B2%93%E8%97%9D%E5%BB%8A%20Red%20Moon%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">25</span>紅玥緬因貓藝廊 Red Moon</p>
+              <p class="shop-row-tagline">#緬因貓控打卡聖地</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=BASE%201%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">26</span>BASE 1</p>
+              <p class="shop-row-tagline">#日籍老闆選貨古著</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%80%90%E7%A6%BE%E5%B1%B1%E9%83%A8%E9%95%B7%E3%80%91-%20%E5%8F%B0%E5%8C%97%E5%BA%97%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">27</span>【禾山部長】- 台北店</p>
+              <p class="shop-row-tagline">#巷弄裡的驚喜小店</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=LazyDer%E6%87%B6%E5%BE%97%E9%81%B8%E7%89%A9/LZD%20Vintage%20%26%20Used%20Select%20Shop%EF%BD%9C%E5%8F%A4%E8%91%97%E3%80%81%E4%BA%8C%E6%89%8B%E3%80%81%E9%81%B8%E7%89%A9%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">28</span>LazyDer懶得選物/LZD Vintage &amp; Used Select Shop｜古着、二手、選物</p>
+              <p class="shop-row-tagline">#零壓力好逛選物店</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Mindful%20Market%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">29</span>Mindful Market</p>
+              <p class="shop-row-tagline">#質感生活選物空間</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B0%8F%E8%89%AF%E7%B5%86-%E6%B6%BC%E9%BA%B5%E5%B0%88%E9%96%80%E5%BA%97%20Bancoldnoodle%20%E5%8F%B0%E5%8C%97" target="_blank" rel="noopener" class="shop-row">
+            <div class="shop-row-content">
+              <p class="shop-row-name"><span class="shop-row-num">30</span>小良絆-涼麵專門店 Bancoldnoodle</p>
+              <p class="shop-row-tagline">#紅到日媒的涼麵店</p>
+              <!-- 優惠內容可在此加一行，例如：<p class="shop-row-promo">憑古着券折抵 100 元</p> -->
+            </div>
+          </a>
+        
         </div>
       </div>
-      <p class="note-box">📌 此區塊為範例內容，請提供正式店家名單、分類與地址後替換。</p>
+
     </div>
   </section>
 
@@ -129,6 +306,6 @@
   <p class="footer-dates">2026.08.20 – 11.10 ・ 台北市中山區赤峰街</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=1"></script>
 </body>
 </html>

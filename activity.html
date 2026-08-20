@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=23">
+<link rel="stylesheet" href="style.css?v=40">
 <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
@@ -42,7 +42,7 @@
     <li class="has-sub">
       <a href="winners.html">月月抽活動</a>
       <ul class="submenu">
-        <li><a href="winners.html#task">當月任務</a></li>
+        <li><a href="winners.html#task">活動說明</a></li>
         <li><a href="winners.html#list">中獎名單</a></li>
       </ul>
     </li>
@@ -61,8 +61,11 @@
 <main>
 
   <section id="silent" class="section bg-paper">
+    <div class="section-deco section-deco-tr"><img src="images/deco-star.png" alt=""></div>
+    <div class="section-deco section-deco-bl"><img src="images/deco-heart.png" alt=""></div>
     <div class="section-inner">
-      <h2>靜音派對</h2>
+      <span class="section-kicker">SILENT PARTY</span>
+      <h2 class="heading-icon"><img src="images/icon-sparkle.png" alt="">靜音派對</h2>
       <p class="lead">
         本次古着派對將邀請專業 DJ 團隊「動漫派 DMP」共同合作，以日式復古為主題，
         打造全方位的音樂體驗。同時考量周邊住戶的居住安寧，本次派對將採用耳機形式進行——
@@ -79,11 +82,14 @@
         </div>
         <div class="info-block">
           <h3>活動地點</h3>
-          <p class="info-value">心中山線形公園（R9出口）</p>
+          <p class="info-value">心中山線形公園<br>（R9出口）</p>
         </div>
         <div class="info-block">
           <h3>參加方式</h3>
-          <p class="info-value info-value-sm">活動官網事前預約（現場保留名額30分鐘，逾時不候）、現場報名</p>
+          <ol class="info-value-list">
+            <li>活動官網事前預約（現場保留名額30分鐘）</li>
+            <li>現場報名</li>
+          </ol>
         </div>
         <div class="info-block">
           <h3>耳機數量</h3>
@@ -92,14 +98,17 @@
       </div>
       <p class="note-box">🎧 兌換活動耳機需抵押個人證件，歸還耳機時退回。</p>
       <div class="reserve-cta">
-        <a href="#" class="reserve-btn">現在預約</a>
+        <a href="https://forms.gle/YFHX1HanXCVBJdkb8" target="_blank" rel="noopener" class="reserve-btn">現在預約</a>
       </div>
     </div>
   </section>
 
   <section id="competition" class="section bg-pale dotted">
+    <div class="section-deco section-deco-tr"><img src="images/deco-glasses.png" alt=""></div>
+    <div class="section-deco section-deco-bl"><img src="images/deco-camera.png" alt=""></div>
     <div class="section-inner">
-      <h2>穿搭競賽</h2>
+      <span class="section-kicker">COMPETITION</span>
+      <h2 class="heading-icon"><img src="images/icon-sunglasses.png" alt="">穿搭競賽</h2>
       <p class="district-quote">
         每一件古着，都承載著一段歲月；每一次穿搭，都是對經典的重新演繹。
       </p>
@@ -107,10 +116,7 @@
         我們即將舉辦一場專屬於古着愛好者的穿搭盛會，誠摯邀請您以布料為畫筆，
         展現獨特的復古美學。本次競賽分為以下兩組：
       </p>
-      <ul class="group-list">
-        <li><strong>Cosplay 意象組</strong>：打破次元壁，以古着元素重塑經典的角色意象。</li>
-        <li><strong>風格穿搭組</strong>：回歸日常品味，穿出專屬於您的 Vintage 風格。</li>
-      </ul>
+      <img src="images/competition-cosplay.jpg" alt="Cosplay 意象組與風格穿搭組說明" class="content-photo content-photo-wide">
       <p class="lead">
         無論是哪一種風格，只要展現出您對古着的深刻理解，
         就有機會在最終的「人氣票選」中脫穎而出，奪得優勝。
@@ -120,14 +126,31 @@
       <div class="info-grid">
         <div class="info-block">
           <h3>報名方式</h3>
-          <p class="info-value">現場登記，人數有限（暫定）</p>
+          <ol class="info-value-list">
+            <li>線上報名（09/10號截止，可獲得早鳥優惠古着券100元）</li>
+            <li>現場報名</li>
+          </ol>
         </div>
         <div class="info-block">
           <h3>評選方式</h3>
-          <p class="info-value">評審評分 + 現場觀眾投票</p>
+          <p class="info-value">活動現場人氣票選</p>
+        </div>
+        <div class="info-block">
+          <h3>投票資格</h3>
+          <p class="info-value info-value-sm">活動現場完成拍照打卡即可獲得投票貼紙乙張</p>
+        </div>
+        <div class="info-block">
+          <h3>獎項說明（兩組各選出前三名）</h3>
+          <ul class="info-value-list">
+            <li>冠軍：古着券 $<span class="count-up" data-target="10000">0</span></li>
+            <li>亞軍：古着券 $<span class="count-up" data-target="5000">0</span></li>
+            <li>季軍：古着券 $<span class="count-up" data-target="3000">0</span></li>
+          </ul>
         </div>
       </div>
-      <p class="note-box">📌 此區塊為範例內容，正式報名與評選規則確認後請替換。</p>
+      <div class="reserve-cta">
+        <a href="https://forms.gle/wchUwh4VNoM3uucn8" target="_blank" rel="noopener" class="reserve-btn">現在報名</a>
+      </div>
     </div>
   </section>
 
@@ -138,6 +161,6 @@
   <p class="footer-dates">2026.08.20 – 11.10 ・ 台北市中山區赤峰街</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=1"></script>
 </body>
 </html>

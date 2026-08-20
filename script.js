@@ -39,4 +39,119 @@ document.addEventListener('DOMContentLoaded', function () {
           '<tr><td colspan="3">名單載入中，請稍後再試。</td></tr>';
       });
   }
+
+  // ---------- Scroll reveal ----------
+  var revealTargets = document.querySelectorAll(
+    '.info-block, .highlight-card, .shop-row, .link-card, .step-card, ' +
+    '.content-photo, .district-quote, .reserve-cta, .store-list-box, .group-list li'
+  );
+
+  if ('IntersectionObserver' in window && revealTargets.length) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    revealTargets.forEach(function (el) {
+      el.classList.add('reveal');
+      revealObserver.observe(el);
+    });
+  }
+
+  // ---------- Nav shrink on scroll ----------
+  var topnav = document.querySelector('.topnav');
+  if (topnav) {
+    var updateNav = function () {
+      if (window.scrollY > 40) {
+        topnav.classList.add('nav-scrolled');
+      } else {
+        topnav.classList.remove('nav-scrolled');
+      }
+    };
+    updateNav();
+    window.addEventListener('scroll', function () {
+      window.requestAnimationFrame(updateNav);
+    }, { passive: true });
+  }
+
+  // ---------- Scroll progress bar ----------
+  var progressBar = document.createElement('div');
+  progressBar.className = 'scroll-progress';
+  document.body.appendChild(progressBar);
+
+  var updateProgress = function () {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = pct + '%';
+  };
+  updateProgress();
+  window.addEventListener('scroll', function () {
+    window.requestAnimationFrame(updateProgress);
+  }, { passive: true });
+  window.addEventListener('resize', updateProgress);
+
+  // ---------- Sticker click burst on CTA buttons ----------
+  var burstEmojis = ['✦', '♥', '✧', '★'];
+
+  function burstStickers(x, y) {
+    for (var i = 0; i < 6; i++) {
+      var el = document.createElement('span');
+      el.className = 'click-burst';
+      el.textContent = burstEmojis[Math.floor(Math.random() * burstEmojis.length)];
+      el.style.left = x + 'px';
+      el.style.top = y + 'px';
+      var angle = Math.random() * Math.PI * 2;
+      var dist = 40 + Math.random() * 40;
+      el.style.setProperty('--dx', Math.cos(angle) * dist + 'px');
+      el.style.setProperty('--dy', Math.sin(angle) * dist + 'px');
+      document.body.appendChild(el);
+      el.addEventListener('animationend', function () {
+        this.remove();
+      });
+    }
+  }
+
+  document.querySelectorAll('.reserve-btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      burstStickers(e.clientX, e.clientY);
+    });
+  });
+
+  // ---------- Count-up numbers ----------
+  var countTargets = document.querySelectorAll('.count-up');
+  if ('IntersectionObserver' in window && countTargets.length) {
+    var countObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+        var duration = 1200;
+        var startTime = null;
+
+        function step(timestamp) {
+          if (!startTime) startTime = timestamp;
+          var progress = Math.min((timestamp - startTime) / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          var value = Math.floor(eased * target);
+          el.textContent = value.toLocaleString('en-US');
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          } else {
+            el.textContent = target.toLocaleString('en-US');
+          }
+        }
+        window.requestAnimationFrame(step);
+        countObserver.unobserve(el);
+      });
+    }, { threshold: 0.5 });
+
+    countTargets.forEach(function (el) {
+      countObserver.observe(el);
+    });
+  }
 });
