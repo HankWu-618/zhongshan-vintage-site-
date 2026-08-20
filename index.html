@@ -8,13 +8,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=40">
+<link rel="stylesheet" href="style.css?v=42">
 <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-<body>
+<body class="page-home">
 
-<nav class="topnav">
-  <a href="index.html" class="topnav-logo"><img src="images/logo.png?v=3" alt="臺北中山古着穿搭一條街"></a>
+<nav class="topnav" aria-label="主要導覽">
+  <a href="index.html" class="topnav-logo" aria-label="臺北中山古着穿搭一條街活動首頁">
+    <img src="images/logo.png?v=3" alt="">
+    <span class="topnav-wordmark" aria-hidden="true"><strong>臺北中山</strong><small>古着穿搭一條街</small></span>
+  </a>
   <button class="topnav-toggle" aria-label="開啟選單" aria-expanded="false">☰ 選單</button>
   <ul class="topnav-menu">
     <li class="has-sub active">
@@ -55,7 +58,7 @@
   <a href="#video" class="hero-cta">認識這條街 ↓</a>
 </div>
 
-<main>
+<main class="site-main">
 
   <section id="video" class="section bg-paper">
     <div class="section-deco section-deco-tr"><img src="images/deco-star.png" alt=""></div>
@@ -202,6 +205,6 @@
   <p class="footer-dates">2026.08.20 – 11.10 ・ 台北市中山區赤峰街</p>
 </footer>
 
-<script src="script.js?v=1"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
