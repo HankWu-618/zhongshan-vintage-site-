@@ -3,18 +3,38 @@ document.addEventListener('DOMContentLoaded', function () {
   var menu = document.querySelector('.topnav-menu');
 
   if (toggle && menu) {
+    var closeMenu = function () {
+      menu.classList.remove('open');
+      document.body.classList.remove('menu-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', '開啟選單');
+    };
+
     toggle.addEventListener('click', function () {
       var isOpen = menu.classList.toggle('open');
+      document.body.classList.toggle('menu-open', isOpen);
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      toggle.setAttribute('aria-label', isOpen ? '關閉選單' : '開啟選單');
     });
 
     menu.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        menu.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
+      link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && menu.classList.contains('open')) {
+        closeMenu();
+        toggle.focus();
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 780 && menu.classList.contains('open')) closeMenu();
     });
   }
+
+  var currentNavLink = document.querySelector('.topnav-menu > li.active > a');
+  if (currentNavLink) currentNavLink.setAttribute('aria-current', 'page');
 
   var winnersTableBody = document.querySelector('[data-winners-body]');
   if (winnersTableBody) {

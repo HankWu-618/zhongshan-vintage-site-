@@ -2532,3 +2532,61 @@ body::before {
       -6px -6px 0 rgba(245,179,205,0.08);
   }
 }
+
+/* ---------- Homepage summary + timeline (added for UX clarity pass) ---------- */
+
+.hero-summary {
+  position: relative;
+  text-align: center;
+  padding: 36px 24px 34px;
+  background: linear-gradient(90deg, rgba(85, 211, 191, 0.14), rgba(245, 179, 205, 0.13)), var(--paper);
+  border-bottom: 3px solid var(--ink);
+}
+
+.hero-summary-text {
+  max-width: 640px;
+  margin: 0 auto 24px;
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+.hero-summary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.hero-summary-actions .reserve-btn {
+  padding: 14px 28px;
+  font-size: 0.95rem;
+}
+
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.timeline-item {
+  background: var(--paper);
+  border: 3px solid var(--ink);
+  border-radius: 18px;
+  padding: 26px 22px;
+  box-shadow: 5px 5px 0 var(--ink);
+  text-align: center;
+}
+
+.timeline-date {
+  display: inline-block;
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  color: var(--mint-deep);
+  margin-bottom: 10px;
+}
+
+.timeline-item h3 { font-size: 1.05rem; margin-bottom: 8px; }
+.timeline-item p { margin: 0; font-size: 0.92rem; opacity: 0.85; line-height: 1.6; }
