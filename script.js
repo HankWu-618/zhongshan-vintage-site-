@@ -174,4 +174,43 @@ document.addEventListener('DOMContentLoaded', function () {
       countObserver.observe(el);
     });
   }
+
+  // ---------- Image lightbox ----------
+  var zoomables = document.querySelectorAll('.zoomable');
+  if (zoomables.length) {
+    var lightbox = document.createElement('div');
+    lightbox.className = 'lightbox-overlay';
+    lightbox.innerHTML = '<button class="lightbox-close" aria-label="關閉放大圖">✕</button><img class="lightbox-img" alt="">';
+    document.body.appendChild(lightbox);
+
+    var lightboxImg = lightbox.querySelector('.lightbox-img');
+    var lightboxClose = lightbox.querySelector('.lightbox-close');
+
+    var openLightbox = function (src, alt) {
+      lightboxImg.src = src;
+      lightboxImg.alt = alt || '';
+      lightbox.classList.add('open');
+      document.body.classList.add('lightbox-lock');
+    };
+
+    var closeLightbox = function () {
+      lightbox.classList.remove('open');
+      document.body.classList.remove('lightbox-lock');
+      lightboxImg.src = '';
+    };
+
+    zoomables.forEach(function (img) {
+      img.addEventListener('click', function () {
+        openLightbox(img.currentSrc || img.src, img.alt);
+      });
+    });
+
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox || e.target === lightboxClose) closeLightbox();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
+    });
+  }
 });
