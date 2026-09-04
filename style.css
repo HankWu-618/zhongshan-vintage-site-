@@ -195,7 +195,7 @@ a { color: inherit; }
   color: var(--ink);
   overflow: hidden;
   background-color: var(--ink);
-  background-image: url("images/hero-banner.jpg?v=4");
+  background-image: url("images/hero-banner.jpg?v=5");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -204,7 +204,7 @@ a { color: inherit; }
 @media (max-width: 780px) {
   .hero {
     aspect-ratio: 1080 / 1350;
-    background-image: url("images/hero-banner-mobile.jpg?v=4");
+    background-image: url("images/hero-banner-mobile.jpg?v=5");
   }
 }
 
