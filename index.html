@@ -8,10 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Baloo+2:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=52">
+<link rel="stylesheet" href="style.css?v=56">
 <link rel="icon" type="image/png" href="images/favicon.png">
-<!-- Cloudflare Web Analytics -->
-<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "69396f2994f4425e9df928f2cd04268c"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body class="page-home">
 
@@ -101,11 +99,10 @@
       <span class="section-kicker">VIDEO</span>
       <h2 class="heading-icon"><img src="images/icon-camera.png" alt="">宣傳影片</h2>
       <p class="lead">一支影片，帶你快速認識這場橫跨三個月的古着穿搭盛會。</p>
-      <div class="video-frame">
-        <img src="images/video-cover.jpg" alt="宣傳影片封面，影片製作中">
-        <!-- 影片就緒後，移除上方 <img>，改用：
-        <iframe src="https://www.youtube.com/embed/替換成影片ID" title="宣傳影片" allowfullscreen></iframe>
-        -->
+      <div class="promo-video-wrap">
+        <video class="promo-video" controls playsinline preload="metadata">
+          <source src="images/promo-video.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </section>
